@@ -1,0 +1,55 @@
+Q. SOLID Principles in JavaScript :
+- SOLID is a set of five object-oriented design principles 
+that help developers write clean, maintainable, and scalable software.
+- JavaScript is not a purely object-oriented language.
+- SOLID principles are widely used in JavaScript, especially in modern applications
+  and frameworks like React, Angular, and Node.js.
+
+  1. Single Responsibility Principle (SRP) :
+  - It states that a class, function, or module should perform only one well-defined task.
+  - When a piece of code handles multiple responsibilities, it becomes difficult to understand,
+    test, and maintain. 
+  - Any change in one responsibility may affect the others and introduce bugs.
+  - For example, instead of creating one class that both stores user information and sends emails,
+    it is better to have one class for managing user data & another for handling email notifications. 
+    This separation makes the code more modular and easier to update or extend in the future.
+
+  2. Open/Closed Principle (OCP) :
+  - software entities should be open for extension but closed for modification.
+  - this means you should be able to add new functionality without changing the existing source code.
+  - In JavaScript, this principle is often implemented using inheritance & polymorphism.
+  - instead of using multiple if-else or switch statements to handle different behaviors,
+    you can define a base class or interface-like structure and then extend it for new behaviors.
+  - When a new feature is needed, a new class can be added without touching the existing logic.
+
+  3. Liskov Substitution Principle (LSP) : 
+  - objects of a derived (child) class should be replaceable with objects of the base (parent) class
+    without affecting the correctness of the program.
+  - wherever a parent class is used, its child class should be usable without causing unexpected behavior.
+  - if a base class represents a bird that can fly, creating a child class like a penguin that throws an error
+    when fly() is called would violate LSP.
+  - Instead, behaviors should be designed so that subclasses remain logically consistent with their base types.
+
+  4. Interface Segregation Principle (ISP) : 
+  - no client should be forced to depend on methods it does not use.
+  - Although JavaScript does not have built-in interfaces like Java or C#.
+  - instead of having a single class with methods for printing, scanning, and faxing, 
+    it is better to create separate classes for each function.
+  - a simple printer class does not need to implement scanning or faxing methods that it does not support.
+  - This improves flexibility and reduces unnecessary dependencies in the code.
+
+  5. Dependency Inversion Principle (DIP) :
+  - high-level modules should not depend on low-level modules; both should depend on abstractions.
+  - abstractions should not depend on details, but details should depend on abstractions.
+  - helps in reducing tight coupling between different parts of a system.
+  - this can be achieved using techniques like dependency injection
+  - Instead of directly creating objects of concrete classes inside another class, 
+    dependencies are passed from the outside.
+  - instead of hardcoding a specific database or API service inside an application class, you pass it as a parameter.
+  - This makes code easier to test, easier to modify, more flexible when switching between different implementations.
+
+overall conclusion : 
+- Code becomes easier to understand and maintain.
+- Changes can be made with minimal impact on existing functionality.
+- Applications become more scalable and flexible.
+- Testing and debugging become simpler.
