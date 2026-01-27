@@ -1,0 +1,16 @@
+Delegates
+
+it is reference to a method.
+it works like a funcion pointer in c and c++.
+for static methods delegate encapsulates method only but 
+for instance methods it encapsulates method and instance both
+it allows you to reference a method like a variable creating for flexible and dynamic programs.
+it binds function and object.
+it allows us to access private methods from one class to another class which we cannot access in normal class.
+two types of delegates : single cast delegates - we call one delegate to one function
+                         multi cast delegates - we call one delegate to multiple functions
+
+for class declaration 
+public class test();
+for delegates declaration
+public delegate void test();
