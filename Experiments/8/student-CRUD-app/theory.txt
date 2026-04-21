@@ -1,0 +1,49 @@
+Entity Framework :-
+it is a tool in dotenet.
+that help us to work with database using c# code instead of SQL queries.
+Advantages : less code, easy to maintain, fast development.
+Types :
+Entity framework vs Entity framework core 
+older version - avdanced version
+heavy - lightweigt
+only for windows - cross platform (linux windows mac)
+
+what is ORM ?
+Object Relational Maping 
+it maps c# classes to DB tables and object to row
+example :
+public class student 
+{
+    public string name{get;set};
+    public int id {get;set};
+}
+
+Types of coding approch in dotnet
+-code first approch : start with coding OR create c# classes DB created automatically.
+-data base first : start with DB OR if DB exist already then only create c# classes from DB.
+-model first : design model first then DB created.
+
+what is DB context ?
+it is a main class that connect your application to the DB.
+it is a bridge between application and DB.
+example :
+public DBset <student> students {get;set};
+
+what is Migration ?
+it is used to create or update DB structure automatically.
+in short to add new property in existing class.
+it adds new column in DB.
+example :
+public class student
+{
+    public string name {get;set;} = String.Empty
+    public int id {get;set;}
+    public string email {get;set;} = String.Empty
+}
+
+CRUD Operations :
+C - create
+R - Fetch / Read
+U - Modify / update~
+D - Delete / Remove
+
